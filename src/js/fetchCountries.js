@@ -1,8 +1,8 @@
-import './sass/main.scss';
-import countrySearch from './js/country-service.js';
-import refs from './js/refs.js';
-import articlesOneCountry from './tamplate/country-card.hbs ';
-import countryList from './template/manyCountries.hbs';
+import '../sass/main.scss';
+import countrySearch from '../js/country-service.js';
+import refs from '../js/refs.js';
+import articlesOneCountry from '../template/country-card.hbs';
+import countryList from '../template/manyCountries.hbs';
 
  import '@pnotify/core/dist/BrightTheme.css';
  const { error } = require('@pnotify/core');
