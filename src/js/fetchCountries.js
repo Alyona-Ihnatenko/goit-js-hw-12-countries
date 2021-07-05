@@ -9,13 +9,12 @@ import countryList from '../template/manyCountries.hbs';
 var debounce = require('lodash.debounce');
 
 
-refs.searchForm.addEventListener('input', debounce(countrySearchInputHandler, 500));
+refs.searchForm.addEventListener('input', debounce(countrySearchInputHandler, 1500));
 
 function countrySearchInputHandler(e) {
   e.preventDefault();
-  clearArticlesContainer();
    const searchQuery = e.target.value;
-  
+   clearArticlesContainer();
   
   countrySearch.fetchArticles(searchQuery).then(data => {
     
